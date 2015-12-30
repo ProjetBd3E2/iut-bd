@@ -48,3 +48,39 @@ values (4,'ugc','ugc.serviceclient@ugc.com',adresse_ty(1,'allée du stade','78190
 insert into entreprise (numEnt,nomEnt,mail,adresse)
 values (5,'jardinerie de chevreuse','jardinerieServiceClient@gmail.com',adresse_ty(1,'rue de versailles','78460','chevreuse'));
 /
+/*stage*/
+insert into stage
+values( 5,2,TO_DATE('11/04/2014'),TO_DATE('01/07/2014'),adresse_ty(1,'rue de versailles','787460','chevreuse'));
+insert into stage
+values( 1,3,TO_DATE('11/04/2012'),TO_DATE('01/07/2012'),adresse_ty(3,'rue de charles de gaulle','75000','paris'));
+insert into stage
+values( 3,5,TO_DATE('11/04/2012'),TO_DATE('01/07/2012'),adresse_ty(1,'allée du stade','78190','saint quentin'));
+insert into stage
+values( 2,7,TO_DATE('11/04/2013'),TO_DATE('01/07/2013'),adresse_ty(3,'rue charles de gaulle','91400','orsay'));
+insert into stage
+values( 2,8,TO_DATE('11/04/2013'),TO_DATE('01/07/2013'),adresse_ty(1,'rue de versailles','75000','paris'));
+insert into stage
+values( 1,9,TO_DATE('11/04/2013'),TO_DATE('01/07/2013'),adresse_ty(1,'rue de versailles','91120','palaiseau'));
+insert into stage
+values( 1,10,TO_DATE('11/04/2013'),TO_DATE('01/07/2013'),adresse_ty(1,'rue de versailles','91400','orsay'));
+insert into stage
+values( 3,11,TO_DATE('11/04/2014'),TO_DATE('01/07/2014'),adresse_ty(1,'rue de versailles','75000','paris'));
+insert into stage
+values( 4,12,TO_DATE('11/04/2014'),TO_DATE('01/07/2014'),adresse_ty(1,'allée du stade','78190','saint quentin'));
+insert into stage
+values( 3,13,TO_DATE('11/04/2014'),TO_DATE('01/07/2014'),adresse_ty(1,'rue de versailles','91120','palaiseau'));
+insert into stage
+values( 1,15,TO_DATE('11/04/2014'),TO_DATE('01/07/2014'),adresse_ty(3,'rue de charles de gaulle','75000','paris'));
+insert into stage
+values(2,16,TO_DATE('11/04/2015'),TO_DATE('01/07/2015'),adresse_ty(1,'rue de versailles','75000','paris'));
+insert into stage
+values( 4,12,TO_DATE('11/04/2013'),TO_DATE('01/07/2013'),adresse_ty(1,'allée du stade','78190','saint quentin'));
+insert into stage
+values( 4,5,TO_DATE('11/04/2014'),TO_DATE('01/07/2014'),adresse_ty(1,'allée du stade','78190','saint quentin'));
+insert into stage
+values( 3,8,TO_DATE('11/04/2014'),TO_DATE('01/07/2014'),adresse_ty(1,'rue de versailles','91400','orsay'));
+insert into stage
+values( 2,3,TO_DATE('11/04/2013'),TO_DATE('01/07/2013'),adresse_ty(1,'rue de versailles','75000','paris'));
+insert into stage
+values( 1,2,TO_DATE('11/04/2015'),TO_DATE('01/07/2015'),adresse_ty(3,'rue de charles de gaulle','75000','paris'));
+/
