@@ -39,6 +39,12 @@ CREATE OR REPLACE TYPE stage_ty AS OBJECT(
 /      
       
 CREATE TABLE stage OF stage_ty 
-(PRIMARY KEY (numEnt, numEtu));
+(PRIMARY KEY (numEnt, numEtu, dateDeb));
+/
+
+create table resultat
+(nbEtudiantStageMaintenant number(5),
+nbEtudiantSansStageMaintenant number(5),
+nbStageTouteZone number(5));
     
     
