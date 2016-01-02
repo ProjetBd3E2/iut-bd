@@ -35,6 +35,7 @@ CREATE OR REPLACE TYPE stage_ty AS OBJECT(
       numEtu      NUMBER(10),
       dateDeb     DATE,
       dateFin     DATE,
+      dateObtention DATE,
       Adresse     adresse_ty);  
 /      
       
