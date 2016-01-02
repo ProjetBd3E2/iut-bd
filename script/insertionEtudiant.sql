@@ -1,40 +1,40 @@
 /*etudiant*/
 insert into etudiant(numEtu,nom,prenom,mail,adresse)
-values (1,'teixeira','simon','simon.teixeira@u-psud.fr',adresse_ty(3,'avenue saint laurent','91400','Orsay'));
+values (1,'teixeira','simon','simon.teixeira@u-psud.fr',2015,2016,adresse_ty(3,'avenue saint laurent','91400','Orsay'));
 insert into etudiant(numEtu,nom,prenom,mail,adresse)
-values (2,'guitton','charles','charles.guitton@u-psud.fr',adresse_ty(4,'rue de paris','91400','Orsay'));
+values (2,'guitton','charles','charles.guitton@u-psud.fr',2013,2015,adresse_ty(4,'rue de paris','91400','Orsay'));
 insert into etudiant(numEtu,nom,prenom,mail,adresse)
-values (3,'mare','benjamin','benjamin.mare@u-psud.fr',adresse_ty(12,'rue de verdun','91400','Orsay'));
+values (3,'mare','benjamin','benjamin.mare@u-psud.fr',2011,2013,adresse_ty(12,'rue de verdun','91400','Orsay'));
 insert into etudiant(numEtu,nom,prenom,mail,adresse)
-values (4,'pavot','fabien','fabien.pavot@u-psud.fr',adresse_ty(1,'rue charles de gaulle','91400','Orsay'));
+values (4,'pavot','fabien','fabien.pavot@u-psud.fr',2014,2015,adresse_ty(1,'rue charles de gaulle','91400','Orsay'));
 insert into etudiant(numEtu,nom,prenom,mail,adresse)
-values (5,'doisneau','mathieu','mathieu.doisneau@u-psud.fr',adresse_ty(18,'rue de port royal','78470','Saint Rémy'));
+values (5,'doisneau','mathieu','mathieu.doisneau@u-psud.fr',2011,2014,adresse_ty(18,'rue de port royal','78470','Saint Rémy'));
 insert into etudiant(numEtu,nom,prenom,mail,adresse)
-values (6,'lapeyre','rémi','rémi.lapeyre@u-psud.fr',adresse_ty(4,'rue de paris','78470','Saint Rémy'));
+values (6,'lapeyre','rémi','rémi.lapeyre@u-psud.fr',2015,2016,adresse_ty(4,'rue de paris','78470','Saint Rémy'));
 insert into etudiant(numEtu,nom,prenom,mail,adresse)
-values (7,'blot','charles','charles.blot@u-psud.fr',adresse_ty(53,'avenue des champs-élysées','75000','Paris'));
+values (7,'blot','charles','charles.blot@u-psud.fr',2012,2013,adresse_ty(53,'avenue des champs-élysées','75000','Paris'));
 insert into etudiant(numEtu,nom,prenom,mail,adresse)
-values (8,'commelin','vincent','vincent.commelin@u-psud.fr',adresse_ty(14,'avenue des champs-élysées','75000','Paris'));
+values (8,'commelin','vincent','vincent.commelin@u-psud.fr',2012,2014,adresse_ty(14,'avenue des champs-élysées','75000','Paris'));
 insert into etudiant(numEtu,nom,prenom,mail,adresse)
-values (9,'mariathas','alain','alain.mariathas@u-psud.fr',adresse_ty(36,'avenue des champs-élysées','75000','¨Paris'));
+values (9,'mariathas','alain','alain.mariathas@u-psud.fr',2012,2013,adresse_ty(36,'avenue des champs-élysées','75000','¨Paris'));
 insert into etudiant(numEtu,nom,prenom,mail,adresse)
-values (10,'mukthar','hassan','hassan.mukthar@u-psud.fr',adresse_ty(12,'rue charles de gaulle','75000','Paris'));
+values (10,'mukthar','hassan','hassan.mukthar@u-psud.fr',2012,2013,adresse_ty(12,'rue charles de gaulle','75000','Paris'));
 insert into etudiant(numEtu,nom,prenom,mail,adresse)
-values (11,'vang foua','jérémie','jérémie.vangfoua@u-psud.fr',adresse_ty(18,'rue charles de gaulle','91400','Orsay'));
+values (11,'vang foua','jérémie','jérémie.vangfoua@u-psud.fr',2013,2014,adresse_ty(18,'rue charles de gaulle','91400','Orsay'));
 insert into etudiant(numEtu,nom,prenom,mail,adresse)
-values (12,'martinez','guillaume','guillaume.martinez@u-psud.fr',adresse_ty(17,'rue du parc','91400','Orsay'));
+values (12,'martinez','guillaume','guillaume.martinez@u-psud.fr',2012,2014,adresse_ty(17,'rue du parc','91400','Orsay'));
 insert into etudiant(numEtu,nom,prenom,mail,adresse)
-values (13,'pardé','tom','tom.pardé@u-psud.fr',adresse_ty(1,'rue du moulin','91400','Orsay'));
+values (13,'pardé','tom','tom.pardé@u-psud.fr',2013,2014,adresse_ty(1,'rue du moulin','91400','Orsay'));
 insert into etudiant(numEtu,nom,prenom,mail,adresse)
-values (14,'bhatta','rajsaurav','rajsaurav.bhatta@u-psud.fr',adresse_ty(12,'boulevard de la liberté','91440','Bures'));
+values (14,'bhatta','rajsaurav','rajsaurav.bhatta@u-psud.fr',2015,2016,adresse_ty(12,'boulevard de la liberté','91440','Bures'));
 insert into etudiant(numEtu,nom,prenom,mail,adresse)
-values (15,'hakim','hakim','hakim.assous@u-psud.fr',adresse_ty(15,'avenue victor hugo','91440','Bures'));
+values (15,'hakim','assous','hakim.assous@u-psud.fr',2013,2014,adresse_ty(15,'avenue victor hugo','91440','Bures'));
 insert into etudiant(numEtu,nom,prenom,mail,adresse)
-values (16,'pourouchottamane','srivatsa','srivatsa.pourouchottamane@u-psud.fr',adresse_ty(5,'avenue voltaire','91440','Bures'));
+values (16,'pourouchottamane','srivatsa','srivatsa.pourouchottamane@u-psud.fr',2014,2015,adresse_ty(5,'avenue voltaire','91440','Bures'));
 insert into etudiant(numEtu,nom,prenom,mail,adresse)
-values (17,'robillard','jonathan','jonathan.robillard@u-psud.fr',adresse_ty(9,'rue gustave vatonne','91190','Gif'));
+values (17,'robillard','jonathan','jonathan.robillard@u-psud.fr',2015,2016,adresse_ty(9,'rue gustave vatonne','91190','Gif'));
 insert into etudiant(numEtu,nom,prenom,mail,adresse)
-values (18,'mercadier','valentin','valentin.mercadier@u-psud.fr',adresse_ty(8,'rue de la chapelle','91190','Gif'));
+values (18,'mercadier','valentin','valentin.mercadier@u-psud.fr',2015,2016,adresse_ty(8,'rue de la chapelle','91190','Gif'));
 /
 /*entreprise*/
 insert into entreprise (numEnt,nomEnt,mail,adresse)

@@ -10,6 +10,8 @@ CREATE OR REPLACE TYPE etudiant_ty AS OBJECT(
     nom         VARCHAR2(50),
     prenom      VARCHAR2(50),
     mail        VARCHAR2(60),
+    debutAnnée  NUMBER(4),
+    finAnnée    NUMBER(4),
     Adresse     adresse_ty);
 /    
     
