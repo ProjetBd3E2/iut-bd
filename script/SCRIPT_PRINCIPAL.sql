@@ -43,6 +43,15 @@ CREATE TABLE stage OF stage_ty
 (PRIMARY KEY (numEnt, numEtu, dateDeb));
 /
 
+Create or Replace type STAGIAIRESPARENT as Object(
+numEntreprise Number(10),
+nomEntreprise Varchar2(15),
+nbStagiaires Number(10));
+/
+
+create or replace type STAGIAIRESPARENT_T as table of STAGIAIRESPARENT;
+/
+
 create table resultat
 (nbEtudiantStageMaintenant number(5),
 nbEtudiantSansStageMaintenant number(5),

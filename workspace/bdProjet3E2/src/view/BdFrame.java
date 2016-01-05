@@ -24,8 +24,14 @@ public class BdFrame extends JFrame {
 	private ButtonGroup group;
 	private JButton execute;
 	private JLabel results;
+	/**
+	 * crée la fenêtre d'affichage principal. Contient des boutons pour choisir les statistiques demandé et affiche le résultat
+	 * une fois que l'utilisateur a choisi une fonction à appeler. La classe ListenerFrame réagis quand l'utilisateur demande 
+	 * des statistiques
+	 * @see listenerFrame
+	 */
 	public BdFrame(){
-		super("Gestionnaire Base de Données");	
+		super("Gestionnaire Statistique Base de Données");	
 		contentPane=new JPanel();resultPane=new JPanel();framePane=new JPanel();
 		results=new JLabel();
 		fct1=new JPanel();fct2=new JPanel();fct3=new JPanel();fct4=new JPanel();fct5=new JPanel();fct6=new JPanel();fct7=new JPanel();fct8=new JPanel();
@@ -112,11 +118,14 @@ public class BdFrame extends JFrame {
 		try {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		} catch (Exception e) {
-			System.err.println("Impossible d'obtenir une meilleur interface graphique");
+			System.err.println("Impossible d'obtenir une meilleure interface graphique");
 		}
 		BdFrame b=new BdFrame();
 	}
-	
+	/**
+	 * 
+	 * @param message
+	 */
 	public void notificationFatalError(String message){
 		/*provoque fermeture du programme*/
 		radioFct1.setEnabled(false);
@@ -133,20 +142,31 @@ public class BdFrame extends JFrame {
 			System.exit(1);
 		}
 	}
+	/**
+	 * 
+	 * @param message
+	 */
 	public void notificationError(String message){
 		/*affiche seulement un message d'erreur, le programme peut continuer*/
 		JOptionPane.showMessageDialog(this, message,"Quelque chose est advenu",JOptionPane.WARNING_MESSAGE);
 	}
+	/**
+	 * 
+	 * @param message
+	 */
 	public void notificationResult(String message){
 		initialize();
 		results.setText(message);
 		pack();
 	}
+	/**
+	 * 
+	 */
 	public void initialize(){
 		textFct3.setText("jj/mm/aaaa");
 		textFct4.setText("jj/mm/aaaa");
 		textFct5.setText("jj/mm/aaaa");
-		textFct61.setText("jj/mm/aaaa");
+		textFct61.setText("ville\t");
 		textFct62.setText("code postal");
 		textFct8.setText("jj/mm/aaaa");
 		results.setText("");

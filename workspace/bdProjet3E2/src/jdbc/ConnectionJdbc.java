@@ -8,6 +8,9 @@ public class ConnectionJdbc {
 	private Connection co;
 	private boolean closed;
 	
+	/**
+	 * 
+	 */
 	public ConnectionJdbc(){
 		co=null;
 		closed=false;

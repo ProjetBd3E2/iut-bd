@@ -5,4 +5,6 @@ drop type stage_ty;
 drop type entreprise_ty;
 drop type etudiant_ty;
 drop type adresse_ty;
+drop type STAGIAIRESPARENT_T;
+drop type STAGIAIRESPARENT;
 drop table resultat;

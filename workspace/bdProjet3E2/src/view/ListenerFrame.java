@@ -34,11 +34,36 @@ public class ListenerFrame implements ActionListener,FocusListener,WindowListene
 					frame.notificationError("Erreur lors de la communication avec la base de donnée, veuillez contacter un administrateur");
 				}
 				}
-			else if(frame.getRadioFct2().isSelected()){}
-			else if(frame.getRadioFct3().isSelected()){}
+			else if(frame.getRadioFct2().isSelected()){
+				try{
+					String result=sql.Function2();frame.notificationResult(result);
+				}catch(SQLException e){
+					frame.notificationError("Erreur lors de la communication avec la base de donnée, veuillez contacter un administrateur");
+				}
+			}
+			else if(frame.getRadioFct3().isSelected()){
+				try {
+					String result=sql.Function3(frame.getTextFct3().getText());
+					frame.notificationResult(result);
+				} catch (IllegalArgumentException e) {
+					frame.notificationError("Entré invalide");
+				} catch (SQLException e) {
+					frame.notificationError("Erreur lors de la communication avec la base de donnée, veuillez contacter un administrateur");
+				}
+			}
 			else if(frame.getRadioFct4().isSelected()){}
 			else if(frame.getRadioFct5().isSelected()){}
-			else if(frame.getRadioFct6().isSelected()){}
+			
+			else if(frame.getRadioFct6().isSelected()){
+				try {
+					String result=sql.Function6(frame.getTextFct61().getText(),frame.getTextFct62().getText());
+					frame.notificationResult(result);
+				} catch (IllegalArgumentException e) {
+					frame.notificationError("Entré invalide");
+				} catch (SQLException e) {
+					frame.notificationError("Erreur lors de la communication avec la base de donnée, veuillez contacter un administrateur");
+				}
+			}
 			else if(frame.getRadioFct7().isSelected()){}
 			else if(frame.getRadioFct8().isSelected()){}
 		}
