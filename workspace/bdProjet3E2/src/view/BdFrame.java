@@ -31,18 +31,18 @@ public class BdFrame extends JFrame {
 	 * @see listenerFrame
 	 */
 	public BdFrame(){
-		super("Gestionnaire Statistique Base de Données");	
+		super("Gestionnaire Statistique Base de Données");
 		contentPane=new JPanel();resultPane=new JPanel();framePane=new JPanel();
 		results=new JLabel();
 		fct1=new JPanel();fct2=new JPanel();fct3=new JPanel();fct4=new JPanel();fct5=new JPanel();fct6=new JPanel();fct7=new JPanel();fct8=new JPanel();
 		radioFct1=new JRadioButton("Nombre d'étudiant avec un stage cette année");
 		radioFct2=new JRadioButton("Nombre d'étudiant sans stage cette année");
 		radioFct3=new JRadioButton("Nombre d'étudiant sans stage à la date suivante:");textFct3=new JTextField("");
-		radioFct4=new JRadioButton("Nombre de stagiaire pris par chaque entreprise depuis:");textFct4=new JTextField("");
-		radioFct5=new JRadioButton("Nombre moyen de stagiaires encadrés par les entreprise depuis:");textFct5=new JTextField("");
+		radioFct4=new JRadioButton("Nombre de stagiaire pris par chaque entreprise depuis ... années:");textFct4=new JTextField("");
+		radioFct5=new JRadioButton("Nombre moyen de stagiaires encadrés par les entreprise depuis ... années:");textFct5=new JTextField("");
 		radioFct6=new JRadioButton("Nombre de stage dans une zone géographique:");textFct61=new JTextField("");textFct62=new JTextField("");
 		radioFct7=new JRadioButton("Nombre de stage pour toutes les zones géographiques");
-		radioFct8=new JRadioButton("Toute les entreprises et leur contact ayant eu au moins un stage depuis:");textFct8=new JTextField("");
+		radioFct8=new JRadioButton("Toute les entreprises et leur contact ayant eu au moins un stage depuis ... années:");textFct8=new JTextField("");
 		group=new ButtonGroup();
 		execute=new JButton("Executer");
 		ListenerFrame l=new ListenerFrame(this);
@@ -50,7 +50,6 @@ public class BdFrame extends JFrame {
 		
 		resultPane.setBorder(BorderFactory.createLineBorder(Color.black));
 		
-		execute.addActionListener(l);
 		group.add(radioFct1);
 		group.add(radioFct2);
 		group.add(radioFct3);
@@ -60,6 +59,7 @@ public class BdFrame extends JFrame {
 		group.add(radioFct7);
 		group.add(radioFct8);
 		
+		execute.addActionListener(l);
 		textFct3.addFocusListener(l);
 		textFct4.addFocusListener(l);
 		textFct5.addFocusListener(l);
@@ -123,7 +123,7 @@ public class BdFrame extends JFrame {
 		BdFrame b=new BdFrame();
 	}
 	/**
-	 * 
+	 * Affiche un message d'erreur, provoque la fermeture de l'application
 	 * @param message
 	 */
 	public void notificationFatalError(String message){
@@ -143,7 +143,7 @@ public class BdFrame extends JFrame {
 		}
 	}
 	/**
-	 * 
+	 * Affiche un message d'erreur, ne provoque pas la fermeture de l'application
 	 * @param message
 	 */
 	public void notificationError(String message){
@@ -151,7 +151,7 @@ public class BdFrame extends JFrame {
 		JOptionPane.showMessageDialog(this, message,"Quelque chose est advenu",JOptionPane.WARNING_MESSAGE);
 	}
 	/**
-	 * 
+	 * Met à jour le JLabel result. Affiche le résultat des statistiques demandé par l'utilisateur
 	 * @param message
 	 */
 	public void notificationResult(String message){
@@ -160,15 +160,15 @@ public class BdFrame extends JFrame {
 		pack();
 	}
 	/**
-	 * 
+	 * Remet à leur état initiale toute les JTextField et le JLabel
 	 */
 	public void initialize(){
 		textFct3.setText("jj/mm/aaaa");
-		textFct4.setText("jj/mm/aaaa");
-		textFct5.setText("jj/mm/aaaa");
+		textFct4.setText("année");
+		textFct5.setText("année");
 		textFct61.setText("ville\t");
 		textFct62.setText("code postal");
-		textFct8.setText("jj/mm/aaaa");
+		textFct8.setText("année");
 		results.setText("");
 	}
 

@@ -43,18 +43,25 @@ CREATE TABLE stage OF stage_ty
 (PRIMARY KEY (numEnt, numEtu, dateDeb));
 /
 
-Create or Replace type STAGIAIRESPARENT as Object(
-numEntreprise Number(10),
-nomEntreprise Varchar2(15),
-nbStagiaires Number(10));
+create or replace package types as type ref_cursor 
+is ref cursor;end;
+
 /
 
-create or replace type STAGIAIRESPARENT_T as table of STAGIAIRESPARENT;
+
+create or replace TYPE ImbriStatOb AS object(
+      CodePostal   char(5),
+      nbStage      number(10));
 /
 
-create table resultat
+
+create or replace TYPE ImbriStatTa AS TABLE OF ImbriStatOb;
+/
+
+create table statistics
 (nbEtudiantStageMaintenant number(5),
 nbEtudiantSansStageMaintenant number(5),
-nbStageTouteZone number(5));
+stagetoutezone ImbriStatTa)
+NESTED TABLE stagetoutezone STORE AS NbStageZone;
     
     

@@ -15,16 +15,18 @@ public class ConnectionJdbc {
 		co=null;
 		closed=false;
 		try{
-			String url="jdbc:oracle:thin:bmare/Oracle#1@oracle.iut-orsay.fr:1521:etudom";
+			String url="jdbc:oracle:thin:steixe2/mdporacle@oracle.iut-orsay.fr:1521:etudom";
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			co= DriverManager.getConnection(url);
 		}
 		catch (ClassNotFoundException e){
 			closed=true;
+			System.err.println("err");
 		}
 		catch (SQLException e)
 		{
 			closed=true;
+			System.err.println("autre err");
 		}
 	}
 	
