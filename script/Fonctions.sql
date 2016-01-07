@@ -138,25 +138,16 @@ END CONTACTENTREPRISE;
 
 /
 
+/*Probleme dans la Procedure
 CREATE OR REPLACE PROCEDURE NBSTAGETOUTEZONEMAJ IS
 BEGIN
 /*met a jour la table imbrique de la table statistique*/
-  DELETE FROM ImbriStatTa;
+ /* DELETE FROM ImbriStatTa;
   INSERT INTO ImbriStatTa
   SELECT ImbriStatOb(s.ADRESSE.CodePostal,COUNT(*)) 
   FROM Stage s
   GROUP BY s.Adresse.CodePostal;
 END NBSTAGETOUTEZONEMAJ;
-
 /
+*/
 
-CREATE TRIGGER trgApresModifStage
-AFTER INSERT OR UPDATE OR DELETE ON stage
-BEGIN
-  UPDATE resultat
-  SET nbEtudiantStageMaintenant = STAGIAIREANNEECOURANTE,
-  nbEtudiantSansStageMaintenant = NONSTAGIAIREANNEECOURANTE;
-  NBSTAGETOUTEZONEMAJ;
-END trgApresModifStage;
-
-/

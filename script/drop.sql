@@ -5,7 +5,8 @@ drop type stage_ty;
 drop type entreprise_ty;
 drop type etudiant_ty;
 drop type adresse_ty;
-drop type package types;
+drop package types;
+drop table statistic;
 drop type ImbriStatTa;
 drop type ImbriStatOb;
-drop table statistics;
+

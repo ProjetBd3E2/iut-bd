@@ -54,14 +54,19 @@ create or replace TYPE ImbriStatOb AS object(
       nbStage      number(10));
 /
 
-
 create or replace TYPE ImbriStatTa AS TABLE OF ImbriStatOb;
 /
 
-create table statistics
+
+create TABLE statistic
 (nbEtudiantStageMaintenant number(5),
 nbEtudiantSansStageMaintenant number(5),
 stagetoutezone ImbriStatTa)
 NESTED TABLE stagetoutezone STORE AS NbStageZone;
+/
+
+
+
+
     
     
